@@ -1,0 +1,26 @@
+.imageslider--images{
+    overflow:hidden;
+    display:flex;
+    width:100%;
+    height:100%;
+}
+
+.imageslider--images__image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    box-sizing:border-box;
+
+    transition: translate .5s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+    scroll-snap-align: start;
+
+    /* border is cheeky, might want to replace */
+    border: 5px solid transparent;
+}
+
+.imageslider{
+    width:600px;
+    height:600px;
+}
